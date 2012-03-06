@@ -1,7 +1,7 @@
 module ApplicationHelper
   
   def logo
-    logo = image_tag("logo.png", alt: "Sample App", class: "round")
+    image_tag("logo.png", alt: "Sample App", class: "round")
   end
 
   # Returns the full title on a per-page basis.
@@ -11,7 +11,7 @@ module ApplicationHelper
       base_title
     else
       "#{base_title} | #{page_title}"
-    end
+    end    
   end
 end
 
